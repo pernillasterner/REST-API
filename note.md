@@ -26,3 +26,5 @@
       - Deleting One - delete('/:id)
 12. Download the extension REST Client to be able to call the RESTful API from VS Code
 13. Create route.rest to create requests
+14. Create module for subsriber and create a schema
+15. Create an async function to get all the subscribers
