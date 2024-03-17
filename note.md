@@ -29,6 +29,7 @@
 14. Create module for subsriber and create a schema
 15. Create an async function to get all the subscribers
 16. Create an async function to add subsribers
+17. Setting up middleware
 
 ## Terminal
 
