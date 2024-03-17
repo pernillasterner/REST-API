@@ -12,3 +12,7 @@
 4. Remove "test" script in package.json and add a new script called `"devStart": "nodemon server.js"`
 5. Create server.js
 6. Create .env
+7. Connect to server
+8. Connect to database
+9. Use CommonJS to load and configure environment variable.
+   Important: CommonJS ensures that the application can securely access sensitive information like database credentials or API keys without hardcodeing them into the source code.
