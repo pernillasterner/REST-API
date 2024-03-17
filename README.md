@@ -1,4 +1,8 @@
-This project is about building a REST API using Node.js, Express & Mongo DB
+# Project Description
+
+This project is a RESTful API built using Node.js, Express, and MongoDB.
+The API serves as a backend system for managing subscriber information.
+It provides endpoints for creating, reading, updating, and deleting subscriber data.
 
 ## Getting Started
 
