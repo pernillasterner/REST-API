@@ -18,6 +18,13 @@ db.on("error", (error) => console.error(error));
 // Once it´s connected
 db.once("open", () => console.log("Connected to database"));
 
+// Set up server to except .json as a body
+app.use(express.json());
+
+// Setting up routes
+const subscribersRouter = require("./routes/subscribers");
+app.use("/subscribers", subscribersRouter); // localhost:3000/subscribers
+
 // Start the server on port 3000
 app.listen(3000, () => console.log("Server Started"));
 
