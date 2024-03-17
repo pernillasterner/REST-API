@@ -31,6 +31,7 @@
 16. Create an async function to add subsribers
 17. Setting up middleware
 18. Delete subscibers
+19. Update subscriber
 
 ## Terminal
 

@@ -20,6 +20,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", getSubscriber, (req, res) => {
   res.send(res.subscriber);
 });
+
 // Creating one
 router.post("/", async (req, res) => {
   const subscriber = new Subscriber({
@@ -33,9 +34,27 @@ router.post("/", async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 });
+
 // Updating one
 // Only update the info that gets past using patch. Put will update all the info of the subscriber
-router.patch("/:id", getSubscriber, (req, res) => {});
+router.patch("/:id", getSubscriber, async (req, res) => {
+  // Name
+  if (req.body.name != null) {
+    res.subscriber.name = req.body.name;
+  }
+  // Subscription
+  if (req.body.subscribedToChannel != null) {
+    res.subscriber.subscribedToChannel = req.body.subscribedToChannel;
+  }
+
+  try {
+    const updateSubscriber = await res.subscriber.save();
+    res.json(updateSubscriber);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+});
+
 // Deleting one
 router.delete("/:id", getSubscriber, async (req, res) => {
   try {
