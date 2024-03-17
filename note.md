@@ -28,3 +28,12 @@
 13. Create route.rest to create requests
 14. Create module for subsriber and create a schema
 15. Create an async function to get all the subscribers
+16. Create an async function to add subsribers
+
+## Terminal
+
+### Open the MongoDB shell
+
+https://www.youtube.com/watch?v=ofme2o29ngU
+
+> mongosh

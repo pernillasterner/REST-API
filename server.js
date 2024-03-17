@@ -8,17 +8,17 @@ const app = express();
 // Require the mongoose library
 const mongoose = require("mongoose");
 
-// Connect to database and add the database connection
-mongoose.connect(process.env.DATABASE_URL);
+// Connect to the database
+mongoose.connect("mongodb://localhost/subscribers");
 
-// Hook up some events to the database to check if it´s working correctly
+// Hook up some events to the database to check if it's working correctly
 const db = mongoose.connection;
 // Log error
 db.on("error", (error) => console.error(error));
-// Once it´s connected
+// Once it's connected
 db.once("open", () => console.log("Connected to database"));
 
-// Set up server to except .json as a body
+// Set up server to accept .json as a body
 app.use(express.json());
 
 // Setting up routes

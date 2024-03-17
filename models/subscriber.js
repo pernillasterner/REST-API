@@ -5,15 +5,15 @@ const mongoose = require("mongoose");
 const subscriberSchema = new mongoose.Schema({
   name: {
     type: String,
-    requires: true,
+    required: true,
   },
-  subscriberToChannel: {
+  subscribedToChannel: {
     type: String,
-    requires: true,
+    required: true,
   },
   subscribeDate: {
     type: String,
-    requires: true,
+    required: true,
     default: Date.now,
   },
 });
