@@ -1,4 +1,4 @@
-# REST API built with Node.js, Express & MongoDB
+# RESTful API built with Node.js, Express & MongoDB
 
 ### Installing dependecies
 
@@ -19,8 +19,10 @@
 10. Set up server to except .json
 11. Setting up routes
     - Create route for subscriber and create file for subscribers
-      - Getting All
-      - Getting One
-      - Creating One
-      - Updating One
-      - Deleting One
+      - Getting All - get('/)
+      - Getting One - get('/:id)
+      - Creating One - post()
+      - Updating One - patch() or put()
+      - Deleting One - delete('/:id)
+12. Download the extension REST Client to be able to call the RESTful API from VS Code
+13. Create route.rest to create requests
