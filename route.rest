@@ -3,8 +3,7 @@ GET http://localhost:3000/subscribers
 
 ###
 
-GET http://localhost:3000/subscribers/
-65f74fa5c53b875807184bb3e
+GET http://localhost:3000/subscribers/65f750f79c9c8d3d351e920f
 
 ###
 
@@ -15,3 +14,7 @@ Content-Type: application/json
     "name": "Amazing Person",
     "subscribedToChannel": "Web Dev Simplified"
 }
+
+###
+
+DELETE http://localhost:3000/subscribers/65f752cbed68275a508c45a7

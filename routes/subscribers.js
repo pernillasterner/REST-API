@@ -35,10 +35,15 @@ router.post("/", async (req, res) => {
 });
 // Updating one
 // Only update the info that gets past using patch. Put will update all the info of the subscriber
-router.patch("/", getSubscriber, (req, res) => {});
+router.patch("/:id", getSubscriber, (req, res) => {});
 // Deleting one
-router.delete("/", getSubscriber, (req, res) => {
-  res.subscriber;
+router.delete("/:id", getSubscriber, async (req, res) => {
+  try {
+    await res.subscriber.deleteOne();
+    res.json({ message: "Deleted Subscriber" });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
 });
 
 // Creating middleware
