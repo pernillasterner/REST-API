@@ -1,4 +1,4 @@
-# REST API built with Node.js, Express & MongoDB
+# RESTful API built with Node.js, Express & MongoDB
 
 ### Installing dependecies
 
@@ -16,3 +16,27 @@
 8. Connect to database
 9. Use CommonJS to load and configure environment variable.
    Important: CommonJS ensures that the application can securely access sensitive information like database credentials or API keys without hardcodeing them into the source code.
+10. Set up server to except .json
+11. Setting up routes
+    - Create route for subscriber and create file for subscribers
+      - Getting All - get('/)
+      - Getting One - get('/:id)
+      - Creating One - post()
+      - Updating One - patch() or put()
+      - Deleting One - delete('/:id)
+12. Download the extension REST Client to be able to call the RESTful API from VS Code
+13. Create route.rest to create requests
+14. Create module for subsriber and create a schema
+15. Create an async function to get all the subscribers
+16. Create an async function to add subsribers
+17. Setting up middleware
+18. Delete subscibers
+19. Update subscriber
+
+## Terminal
+
+### Open the MongoDB shell
+
+https://www.youtube.com/watch?v=ofme2o29ngU
+
+> mongosh
