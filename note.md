@@ -16,3 +16,11 @@
 8. Connect to database
 9. Use CommonJS to load and configure environment variable.
    Important: CommonJS ensures that the application can securely access sensitive information like database credentials or API keys without hardcodeing them into the source code.
+10. Set up server to except .json
+11. Setting up routes
+    - Create route for subscriber and create file for subscribers
+      - Getting All
+      - Getting One
+      - Creating One
+      - Updating One
+      - Deleting One
